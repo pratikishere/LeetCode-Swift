@@ -30,6 +30,16 @@ struct FizzBuzz {
 
         return receivedStrings
     }
+
+    func getReceivedStrings(till number: Int) -> [String] {
+        var receivedStrings: [String] = []
+
+        for i in 1...number {
+            receivedStrings.append(getString(for: i))
+        }
+
+        return receivedStrings
+    }
 }
 
 class FizzBuzzTests: XCTestCase {
@@ -85,7 +95,7 @@ class FizzBuzzTests: XCTestCase {
             "FizzBuzz"
         ]
 
-        let receivedStrings = makeSUT().getReceivedStrings(for: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+        let receivedStrings = makeSUT().getReceivedStrings(till: 15)
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
