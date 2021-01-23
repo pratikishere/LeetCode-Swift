@@ -20,6 +20,16 @@ struct FizzBuzz {
 
         return "\(number)"
     }
+
+    func getReceivedStrings(for numbers: [Int]) -> [String] {
+        var receivedStrings: [String] = []
+
+        numbers.forEach { (number) in
+            receivedStrings.append(getString(for: number))
+        }
+
+        return receivedStrings
+    }
 }
 
 class FizzBuzzTests: XCTestCase {
@@ -27,7 +37,7 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnNumberStringWhenPassNumber() {
         let expectedStrings: [String] = ["1", "2", "7"]
 
-        let receivedStrings = getReceivedStrings(for: [1, 2, 7])
+        let receivedStrings = makeSUT().getReceivedStrings(for: [1, 2, 7])
 
         XCTAssertEqual(receivedStrings, expectedStrings)
     }
@@ -35,7 +45,7 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnFizzForMultipliesOfThree() {
         let expectedStrings: [String] = ["Fizz", "Fizz", "Fizz"]
 
-        let receivedStrings = getReceivedStrings(for: [3, 66, 999])
+        let receivedStrings = makeSUT().getReceivedStrings(for: [3, 66, 999])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -43,7 +53,7 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnBuzzForMultipliesOfFive() {
         let expectedStrings: [String] = ["Buzz", "Buzz", "Buzz"]
 
-        let receivedStrings = getReceivedStrings(for: [5, 10, 1000])
+        let receivedStrings = makeSUT().getReceivedStrings(for: [5, 10, 1000])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -51,7 +61,31 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnFizzBuzzForMultipliesOfThreeAndFive() {
         let expectedStrings: [String] = ["FizzBuzz", "FizzBuzz", "FizzBuzz"]
 
-        let receivedStrings = getReceivedStrings(for: [15, 135, 75])
+        let receivedStrings = makeSUT().getReceivedStrings(for: [15, 135, 75])
+
+        XCTAssertEqual(expectedStrings, receivedStrings)
+    }
+
+    func test_getStrings_shouldReturnArrayOfStringsTillTheNumber() {
+        let expectedStrings: [String] = [
+            "1",
+            "2",
+            "Fizz",
+            "4",
+            "Buzz",
+            "Fizz",
+            "7",
+            "8",
+            "Fizz",
+            "Buzz",
+            "11",
+            "Fizz",
+            "13",
+            "14",
+            "FizzBuzz"
+        ]
+
+        let receivedStrings = makeSUT().getReceivedStrings(for: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -64,15 +98,5 @@ class FizzBuzzTests: XCTestCase {
 
     private func getString(for number: Int) -> String {
         return makeSUT().getString(for: number)
-    }
-
-    private func getReceivedStrings(for numbers: [Int]) -> [String] {
-        var receivedStrings: [String] = []
-
-        numbers.forEach { (number) in
-            receivedStrings.append(getString(for: number))
-        }
-
-        return receivedStrings
     }
 }
