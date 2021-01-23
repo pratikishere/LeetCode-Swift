@@ -25,19 +25,17 @@ struct FizzBuzz {
 class FizzBuzzTests: XCTestCase {
 
     func test_getString_shouldReturnNumberStringWhenPassNumber() {
-        let expectedString: String = "1"
-        let receivedString = getString(for: 1)
-        XCTAssertEqual(receivedString, expectedString)
+        let expectedStrings: [String] = ["1", "2", "7"]
+
+        let receivedStrings = getReceivedStrings(for: [1, 2, 7])
+
+        XCTAssertEqual(receivedStrings, expectedStrings)
     }
 
     func test_getString_shouldReturnFizzForMultipliesOfThree() {
         let expectedStrings: [String] = ["Fizz", "Fizz", "Fizz"]
 
-        var receivedStrings: [String] = []
-
-        [3, 66, 999].forEach { (number) in
-            receivedStrings.append(getString(for: number))
-        }
+        let receivedStrings = getReceivedStrings(for: [3, 66, 999])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -45,11 +43,7 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnBuzzForMultipliesOfFive() {
         let expectedStrings: [String] = ["Buzz", "Buzz", "Buzz"]
 
-        var receivedStrings: [String] = []
-
-        [5, 10, 1000].forEach { (number) in
-            receivedStrings.append(getString(for: number))
-        }
+        let receivedStrings = getReceivedStrings(for: [5, 10, 1000])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -57,11 +51,7 @@ class FizzBuzzTests: XCTestCase {
     func test_getString_shouldReturnFizzBuzzForMultipliesOfThreeAndFive() {
         let expectedStrings: [String] = ["FizzBuzz", "FizzBuzz", "FizzBuzz"]
 
-        var receivedStrings: [String] = []
-
-        [15, 135, 75].forEach { (number) in
-            receivedStrings.append(getString(for: number))
-        }
+        let receivedStrings = getReceivedStrings(for: [15, 135, 75])
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
@@ -74,5 +64,15 @@ class FizzBuzzTests: XCTestCase {
 
     private func getString(for number: Int) -> String {
         return makeSUT().getString(for: number)
+    }
+
+    private func getReceivedStrings(for numbers: [Int]) -> [String] {
+        var receivedStrings: [String] = []
+
+        numbers.forEach { (number) in
+            receivedStrings.append(getString(for: number))
+        }
+
+        return receivedStrings
     }
 }
