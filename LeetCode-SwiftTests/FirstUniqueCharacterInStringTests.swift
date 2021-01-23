@@ -26,7 +26,7 @@ class FirstUniqueCharacterInStringTests: XCTestCase {
     func test_getIndex_shouldReturnMinusOneIndexForNonMatchingCharacter() {
         let expectedIndex: Int = -1
 
-        let receivedIndex: Int = Solution().getIndex(from: "Hello World", for: "p")
+        let receivedIndex: Int = Solution().getIndex(from: "hello world", for: "p")
 
         XCTAssertEqual(expectedIndex, receivedIndex)
     }
