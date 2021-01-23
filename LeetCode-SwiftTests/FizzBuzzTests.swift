@@ -14,13 +14,13 @@ struct FizzBuzz {
             return "Fizz"
         }
 
-        return "1"
+        return "\(number)"
     }
 }
 
 class FizzBuzzTests: XCTestCase {
 
-    func test_getString_shouldReturnOneStringWhenPassOneNumber() {
+    func test_getString_shouldReturnNumberStringWhenPassNumber() {
         let expectedString: String = "1"
         let receivedString = getString(for: 1)
         XCTAssertEqual(receivedString, expectedString)
