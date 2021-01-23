@@ -1,0 +1,23 @@
+//
+//  FizzBuzzTests.swift
+//  LeetCode-SwiftTests
+//
+//  Created by Pratik Patel on 23/01/21.
+//
+
+import XCTest
+
+struct FizzBuzz {
+    func get(string fromNumber: Int) -> String {
+        return "1"
+    }
+}
+
+class FizzBuzzTests: XCTestCase {
+
+    func test_getString_shouldReturnOneStringWhenPassOneNumber() {
+        let expectedString: String = "1"
+        let receivedString = FizzBuzz().get(string: 1)
+        XCTAssertEqual(receivedString, expectedString)
+    }
+}
