@@ -8,7 +8,12 @@
 import XCTest
 
 struct FizzBuzz {
-    func getString(for: Int) -> String {
+    func getString(for number: Int) -> String {
+
+        if number % 3 == 0 {
+            return "Fizz"
+        }
+
         return "1"
     }
 }
@@ -17,7 +22,23 @@ class FizzBuzzTests: XCTestCase {
 
     func test_getString_shouldReturnOneStringWhenPassOneNumber() {
         let expectedString: String = "1"
-        let receivedString = FizzBuzz().getString(for: 1)
+        let receivedString = getString(for: 1)
         XCTAssertEqual(receivedString, expectedString)
+    }
+
+    func test_getString_shouldReturnFizzForMultipliesOfThree() {
+        let expectedString: String = "Fizz"
+        let receivedString = getString(for: 3)
+        XCTAssertEqual(expectedString, receivedString)
+    }
+
+    // MARK: Helpers
+
+    private func makeSUT() -> FizzBuzz {
+        return FizzBuzz()
+    }
+
+    private func getString(for number: Int) -> String {
+        return makeSUT().getString(for: number)
     }
 }
