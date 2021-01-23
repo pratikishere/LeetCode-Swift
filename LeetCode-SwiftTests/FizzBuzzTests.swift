@@ -27,9 +27,15 @@ class FizzBuzzTests: XCTestCase {
     }
 
     func test_getString_shouldReturnFizzForMultipliesOfThree() {
-        let expectedString: String = "Fizz"
-        let receivedString = getString(for: 3)
-        XCTAssertEqual(expectedString, receivedString)
+        let expectedStrings: [String] = ["Fizz", "Fizz", "Fizz"]
+
+        var receivedStrings: [String] = []
+
+        [3, 66, 999].forEach { (number) in
+            receivedStrings.append(getString(for: number))
+        }
+
+        XCTAssertEqual(expectedStrings, receivedStrings)
     }
 
     // MARK: Helpers
