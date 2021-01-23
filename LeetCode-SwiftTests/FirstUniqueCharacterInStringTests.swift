@@ -8,25 +8,49 @@
 import XCTest
 
 struct Solution {
-    func getIndex(from givenString: String, for character: String.Element) -> Int {
-        let index = -1
+    func getFirstUniqueCharacterIndex(from givenString: String) -> Int {
+        var dic = [Character: Bool]()
 
-        for (index, char) in givenString.enumerated() {
-            if char == character {
-                return index
+        for char in givenString {
+            if let _ = dic[char] {
+                dic[char] = true
+            } else {
+                dic[char] = false
             }
         }
 
-        return index
+        for (i, char) in givenString.enumerated() {
+            if dic[char] == false {
+                return i
+            }
+        }
+
+        return -1
     }
 }
 
 class FirstUniqueCharacterInStringTests: XCTestCase {
 
-    func test_getIndex_shouldReturnMinusOneIndexForNonMatchingCharacter() {
+    func test_getIndex_shouldReturnMinusOneForEmptyString() {
         let expectedIndex: Int = -1
 
-        let receivedIndex: Int = Solution().getIndex(from: "hello world", for: "p")
+        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "")
+
+        XCTAssertEqual(expectedIndex, receivedIndex)
+    }
+
+    func test_getIndex_shouldReturnMinusOneIfThereIsNoUniqueCharacter() {
+        let expectedIndex: Int = -1
+
+        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "lool")
+
+        XCTAssertEqual(expectedIndex, receivedIndex)
+    }
+
+    func test_getIndex_shouldReturnIndexIfThereIsAUniqueCharacter() {
+        let expectedIndex: Int = 6
+
+        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "loolppk")
 
         XCTAssertEqual(expectedIndex, receivedIndex)
     }
