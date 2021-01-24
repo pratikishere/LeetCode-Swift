@@ -11,6 +11,7 @@
 		9E7ADB0B25BC9111005BA58C /* LeetCode_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */; };
 		9E7ADB1D25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */; };
+		9E7ADB2125BD534C005BA58C /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB2025BD534C005BA58C /* Solution.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		9E7ADB0A25BC9111005BA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUniqueCharacterInStringTests.swift; sourceTree = "<group>"; };
+		9E7ADB2025BD534C005BA58C /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */,
 				9E7ADAFE25BC9111005BA58C /* Info.plist */,
+				9E7ADB2025BD534C005BA58C /* Solution.swift */,
 			);
 			path = "LeetCode-Swift";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				TargetAttributes = {
 					9E7ADAF925BC9111005BA58C = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					9E7ADB0225BC9111005BA58C = {
 						CreatedOnToolsVersion = 12.2;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7ADB2125BD534C005BA58C /* Solution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 		9E7ADB0F25BC9111005BA58C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -360,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LeetCode-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -367,6 +374,7 @@
 		9E7ADB1025BC9111005BA58C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -390,6 +398,7 @@
 		9E7ADB1225BC9111005BA58C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
@@ -407,6 +416,7 @@
 		9E7ADB1325BC9111005BA58C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
