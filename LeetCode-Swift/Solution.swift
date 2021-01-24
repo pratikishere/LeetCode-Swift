@@ -35,6 +35,19 @@ public struct Solution {
 
         if givenString.isEmpty { return true }
 
-        return false
+        var i = 0, j = givenString.count - 1
+
+        let sChars = Array(givenString.lowercased())
+
+        while i < j {
+            if sChars[i] != sChars[j] {
+                return false
+            } else {
+                i += 1
+                j -= 1
+            }
+        }
+
+        return true
     }
 }
