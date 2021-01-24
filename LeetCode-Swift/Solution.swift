@@ -30,4 +30,11 @@ public struct Solution {
 
         return -1
     }
+
+    public func isPalindromeString(for givenString: String) -> Bool {
+
+        if givenString.isEmpty { return true }
+
+        return false
+    }
 }

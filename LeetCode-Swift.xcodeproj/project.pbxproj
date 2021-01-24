@@ -12,6 +12,7 @@
 		9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */; };
 		9E7ADB1D25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */; };
 		9E7ADB2125BD534C005BA58C /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB2025BD534C005BA58C /* Solution.swift */; };
+		9E7ADB2525BD53D7005BA58C /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB2425BD53D7005BA58C /* ValidPalindromeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUniqueCharacterInStringTests.swift; sourceTree = "<group>"; };
 		9E7ADB2025BD534C005BA58C /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		9E7ADB2425BD53D7005BA58C /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				9E7ADB0A25BC9111005BA58C /* Info.plist */,
 				9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */,
 				9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */,
+				9E7ADB2425BD53D7005BA58C /* ValidPalindromeTests.swift */,
 			);
 			path = "LeetCode-SwiftTests";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */,
+				9E7ADB2525BD53D7005BA58C /* ValidPalindromeTests.swift in Sources */,
 				9E7ADB1D25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
