@@ -13,7 +13,7 @@ class FirstUniqueCharacterInStringTests: XCTestCase {
     func test_getIndex_shouldReturnMinusOneForEmptyString() {
         let expectedIndex: Int = -1
 
-        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "")
+        let receivedIndex: Int = FirstUniqueCharacterInString().getFirstUniqueCharacterIndex(from: "")
 
         XCTAssertEqual(expectedIndex, receivedIndex)
     }
@@ -21,7 +21,7 @@ class FirstUniqueCharacterInStringTests: XCTestCase {
     func test_getIndex_shouldReturnMinusOneIfThereIsNoUniqueCharacter() {
         let expectedIndex: Int = -1
 
-        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "lool")
+        let receivedIndex: Int = FirstUniqueCharacterInString().getFirstUniqueCharacterIndex(from: "lool")
 
         XCTAssertEqual(expectedIndex, receivedIndex)
     }
@@ -29,7 +29,7 @@ class FirstUniqueCharacterInStringTests: XCTestCase {
     func test_getIndex_shouldReturnIndexIfThereIsAUniqueCharacter() {
         let expectedIndex: Int = 6
 
-        let receivedIndex: Int = Solution().getFirstUniqueCharacterIndex(from: "loolppk")
+        let receivedIndex: Int = FirstUniqueCharacterInString().getFirstUniqueCharacterIndex(from: "loolppk")
 
         XCTAssertEqual(expectedIndex, receivedIndex)
     }
