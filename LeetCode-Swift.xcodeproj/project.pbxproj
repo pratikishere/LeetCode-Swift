@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1831B2422627546700430F29 /* SumOfMaxMinNumersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B2412627546700430F29 /* SumOfMaxMinNumersTests.swift */; };
+		1831B24A262768B600430F29 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B249262768B600430F29 /* FizzBuzz.swift */; };
 		9E7ADB0425BC9111005BA58C /* LeetCode_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */; };
 		9E7ADB0B25BC9111005BA58C /* LeetCode_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1831B2412627546700430F29 /* SumOfMaxMinNumersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfMaxMinNumersTests.swift; sourceTree = "<group>"; };
+		1831B249262768B600430F29 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode_Swift.h; sourceTree = "<group>"; };
 		9E7ADAFE25BC9111005BA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */,
 				9E7ADAFE25BC9111005BA58C /* Info.plist */,
 				9E7ADB2025BD534C005BA58C /* Solution.swift */,
+				1831B249262768B600430F29 /* FizzBuzz.swift */,
 			);
 			path = "LeetCode-Swift";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				9E7ADB2A25BD6D2A005BA58C /* String+Extension.swift in Sources */,
 				9E7ADB2125BD534C005BA58C /* Solution.swift in Sources */,
+				1831B24A262768B600430F29 /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
