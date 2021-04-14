@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1831B2422627546700430F29 /* SumOfMaxMinNumersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B2412627546700430F29 /* SumOfMaxMinNumersTests.swift */; };
 		9E7ADB0425BC9111005BA58C /* LeetCode_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */; };
 		9E7ADB0B25BC9111005BA58C /* LeetCode_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1831B2412627546700430F29 /* SumOfMaxMinNumersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfMaxMinNumersTests.swift; sourceTree = "<group>"; };
 		9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode_Swift.h; sourceTree = "<group>"; };
 		9E7ADAFE25BC9111005BA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */,
 				9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */,
 				9E7ADB2425BD53D7005BA58C /* ValidPalindromeTests.swift */,
+				1831B2412627546700430F29 /* SumOfMaxMinNumersTests.swift */,
 			);
 			path = "LeetCode-SwiftTests";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1831B2422627546700430F29 /* SumOfMaxMinNumersTests.swift in Sources */,
 				9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */,
 				9E7ADB2525BD53D7005BA58C /* ValidPalindromeTests.swift in Sources */,
 				9E7ADB1D25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift in Sources */,
