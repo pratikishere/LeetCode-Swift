@@ -1,16 +1,16 @@
 //
-//  Solution.swift
+//  Palindrome.swift
 //  LeetCode-Swift
 //
-//  Created by Pratik Patel on 24/01/21.
+//  Created by Apple on 14/04/21.
 //
 
 import Foundation
 
-public struct Solution {
-
+public struct Palindrome {
+    
     public init() {}
-
+    
     public func isPalindromeString(for givenString: String) -> Bool {
 
         if givenString.isEmpty { return true }
