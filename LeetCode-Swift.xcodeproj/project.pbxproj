@@ -11,6 +11,8 @@
 		1831B2502627698600430F29 /* FirstUniqueCharacterInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B24F2627698600430F29 /* FirstUniqueCharacterInString.swift */; };
 		1831B25426276A1400430F29 /* Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B25326276A1400430F29 /* Palindrome.swift */; };
 		1831B25826276A5B00430F29 /* PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831B25726276A5B00430F29 /* PalindromeTests.swift */; };
+		308F5E042EA1DA97002EDCE0 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308F5E032EA1DA8E002EDCE0 /* TwoSum.swift */; };
+		308F5E062EA1DAD3002EDCE0 /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308F5E052EA1DAD3002EDCE0 /* TwoSumTests.swift */; };
 		9E7ADB0425BC9111005BA58C /* LeetCode_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */; };
 		9E7ADB0B25BC9111005BA58C /* LeetCode_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */; };
@@ -33,6 +35,8 @@
 		1831B24F2627698600430F29 /* FirstUniqueCharacterInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUniqueCharacterInString.swift; sourceTree = "<group>"; };
 		1831B25326276A1400430F29 /* Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palindrome.swift; sourceTree = "<group>"; };
 		1831B25726276A5B00430F29 /* PalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTests.swift; sourceTree = "<group>"; };
+		308F5E032EA1DA8E002EDCE0 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		308F5E052EA1DAD3002EDCE0 /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		9E7ADAFA25BC9111005BA58C /* LeetCode_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7ADAFD25BC9111005BA58C /* LeetCode_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode_Swift.h; sourceTree = "<group>"; };
 		9E7ADAFE25BC9111005BA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				1831B249262768B600430F29 /* FizzBuzz.swift */,
 				1831B24F2627698600430F29 /* FirstUniqueCharacterInString.swift */,
 				1831B25326276A1400430F29 /* Palindrome.swift */,
+				308F5E032EA1DA8E002EDCE0 /* TwoSum.swift */,
 			);
 			path = "LeetCode-Swift";
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				9E7ADB1625BC91ED005BA58C /* FizzBuzzTests.swift */,
 				9E7ADB1C25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift */,
 				1831B25726276A5B00430F29 /* PalindromeTests.swift */,
+				308F5E052EA1DAD3002EDCE0 /* TwoSumTests.swift */,
 			);
 			path = "LeetCode-SwiftTests";
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308F5E042EA1DA97002EDCE0 /* TwoSum.swift in Sources */,
 				9E7ADB2A25BD6D2A005BA58C /* String+Extension.swift in Sources */,
 				1831B25426276A1400430F29 /* Palindrome.swift in Sources */,
 				1831B24A262768B600430F29 /* FizzBuzz.swift in Sources */,
@@ -234,6 +241,7 @@
 			files = (
 				9E7ADB1725BC91ED005BA58C /* FizzBuzzTests.swift in Sources */,
 				9E7ADB1D25BCA69D005BA58C /* FirstUniqueCharacterInStringTests.swift in Sources */,
+				308F5E062EA1DAD3002EDCE0 /* TwoSumTests.swift in Sources */,
 				1831B25826276A5B00430F29 /* PalindromeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
