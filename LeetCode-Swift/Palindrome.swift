@@ -2,7 +2,7 @@
 //  Palindrome.swift
 //  LeetCode-Swift
 //
-//  Created by Apple on 14/04/21.
+//  Created by Pratik Patel on 14/04/21.
 //
 
 import Foundation
