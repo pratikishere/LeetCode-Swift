@@ -22,6 +22,12 @@ final class TwoSumTests: XCTestCase {
         XCTAssertTrue(indices.isEmpty, "Target is equal to number")
     }
     
+    func testReturnZeroAsIndiceWhenTargetIsMatchedWithNumber() {
+        let sut = makeSUT()
+        let indices = sut.twoSum([8], 8)
+        XCTAssertEqual(indices.first!, 0, "Target is not equal to number hence indices is empty")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT() -> TwoSum {
