@@ -11,8 +11,20 @@ import XCTest
 final class TwoSumTests: XCTestCase {
 
     func testReturnEmptyIndicesWhenNoNumbers() {
-        let sut = TwoSum()
+        let sut = makeSUT()
         let indices = sut.twoSum([], 8)
         XCTAssertTrue(indices.isEmpty, "Indices is not empty")
+    }
+    
+    func testReturnEmptyIndicesWhenTargetIsNotEqualNumber() {
+        let sut = makeSUT()
+        let indices = sut.twoSum([1], 8)
+        XCTAssertTrue(indices.isEmpty, "Target is equal to number")
+    }
+    
+    // MARK: - Helpers
+    
+    private func makeSUT() -> TwoSum {
+        return TwoSum()
     }
 }
