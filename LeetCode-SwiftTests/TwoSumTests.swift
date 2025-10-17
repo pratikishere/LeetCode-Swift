@@ -28,6 +28,28 @@ final class TwoSumTests: XCTestCase {
         XCTAssertEqual(indices.first!, 0, "Target is not equal to number hence indices is empty")
     }
     
+    func testReturnEmptyIndicesWhenTargetIsNotEqualToSumOfNumbers() {
+        let sut = makeSUT()
+        let indices = sut.twoSum([1, 2], 8)
+        XCTAssertEqual(indices.count, 0, "Target is equal to sum of numbers")
+    }
+    
+    func testReturnIndicesWhenTargetIsEqualToSumOfNumbers() {
+        let sut = makeSUT()
+        var numbers = [1, 4, 3, 4, 4]
+        var indices = sut.twoSum(numbers, 8)
+        
+        XCTAssertEqual(indices.count, 2, "Target is not equal to sum of numbers")
+        XCTAssertEqual(indices[0], 1, "indice is not matching")
+        XCTAssertEqual(indices[1], 3, "indice is not matching")
+        
+        numbers = [1, 4, 1, 4, 8, 7, 2, 3, 9, 3]
+        indices = sut.twoSum(numbers, 10)
+        XCTAssertEqual(indices.count, 2, "Target is not equal to sum of numbers")
+        XCTAssertEqual(indices[0], 0, "indice is not matching")
+        XCTAssertEqual(indices[1], 8, "indice is not matching")
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT() -> TwoSum {
