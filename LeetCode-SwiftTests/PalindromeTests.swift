@@ -21,7 +21,7 @@ class PalindromeTests: XCTestCase {
     func test_isPalindromeString_shouldReturnTrueForAlphanumericString() {
         let expectedValue = true
 
-        let receivedValue = Palindrome().isPalindromeString(for: "A man, a plan, a canal: Panama".alphanumeric)
+        let receivedValue = Palindrome().isPalindromeString(for: "A man, a plan, a canal: Panama")
 
         XCTAssertEqual(expectedValue, receivedValue)
     }
@@ -29,7 +29,7 @@ class PalindromeTests: XCTestCase {
     func test_isPalindromeString_shouldReturnFalseForInvalidString() {
         let expectedValue = false
 
-        let receivedValue = Palindrome().isPalindromeString(for: "abcb".alphanumeric)
+        let receivedValue = Palindrome().isPalindromeString(for: "abcb")
 
         XCTAssertEqual(expectedValue, receivedValue)
     }

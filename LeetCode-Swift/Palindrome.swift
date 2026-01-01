@@ -11,13 +11,11 @@ public struct Palindrome {
     
     public init() {}
     
-    public func isPalindromeString(for givenString: String) -> Bool {
+    public func isPalindromeString(for s: String) -> Bool {
 
-        if givenString.isEmpty { return true }
-
-        var i = 0, j = givenString.count - 1
-
-        let sChars = Array(givenString.lowercased())
+        if s.isEmpty { return true }
+        let sChars = Array(s.lowercased().filter { $0.isLetter || $0.isNumber })
+        var i = 0, j = sChars.count - 1
 
         while i < j {
             if sChars[i] != sChars[j] {
