@@ -46,8 +46,14 @@ final class TwoSumTests: XCTestCase {
         numbers = [1, 4, 1, 4, 8, 7, 2, 3, 9, 3]
         indices = sut.twoSum(numbers, 10)
         XCTAssertEqual(indices.count, 2, "Target is not equal to sum of numbers")
-        XCTAssertEqual(indices[0], 0, "indice is not matching")
-        XCTAssertEqual(indices[1], 8, "indice is not matching")
+        XCTAssertEqual(indices[0], 4, "indice is not matching")
+        XCTAssertEqual(indices[1], 6, "indice is not matching")
+        
+        numbers = [1, 6, 1, 4, 6, 5, 9]
+        indices = sut.twoSum(numbers, 12)
+        XCTAssertEqual(indices.count, 2, "Target is not equal to sum of numbers")
+        XCTAssertEqual(indices[0], 1, "indice is not matching")
+        XCTAssertEqual(indices[1], 4, "indice is not matching")
     }
     
     // MARK: - Helpers

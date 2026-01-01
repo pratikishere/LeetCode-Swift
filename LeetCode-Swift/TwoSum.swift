@@ -24,19 +24,16 @@ class TwoSum {
             return [0, 1]
         }
         
-        var i = 0, j = i + 1
-        
-        while i < j {
-            if nums[i] + nums[j] == target {
-                return [i, j]
-            } else {
-                if j == nums.count - 1 {
-                    i += 1
-                    j = i + 1
-                } else {
-                    j += 1
-                }
+        var seen: [Int: Int] = [:]
+                
+        for (i, num) in nums.enumerated() {
+            let complement = target - num
+            
+            if let j = seen[complement] {
+                return [j, i]
             }
+            
+            seen[num] = i
         }
         
         return []
