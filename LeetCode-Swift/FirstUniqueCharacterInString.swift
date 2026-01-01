@@ -11,10 +11,10 @@ public struct FirstUniqueCharacterInString {
     
     public init() {}
     
-    public func getFirstUniqueCharacterIndex(from givenString: String) -> Int {
+    public func getFirstUniqueCharacterIndex(from s: String) -> Int {
         var dic = [Character: Bool]()
 
-        for char in givenString {
+        for char in s {
             if let _ = dic[char] {
                 dic[char] = true
             } else {
@@ -22,7 +22,7 @@ public struct FirstUniqueCharacterInString {
             }
         }
 
-        for (i, char) in givenString.enumerated() {
+        for (i, char) in s.enumerated() {
             if dic[char] == false {
                 return i
             }
