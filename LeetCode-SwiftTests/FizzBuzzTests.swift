@@ -10,58 +10,48 @@ import LeetCode_Swift
 
 class FizzBuzzTests: XCTestCase {
 
-    func test_getString_shouldReturnNumberStringWhenPassNumber() {
-        let expectedStrings: [String] = ["1", "2", "7"]
+    func test_getString_shouldReturnNumberStringWhenTwoNumbersPassed() {
+        let expectedStrings: [String] = ["1", "2"]
 
-        let receivedStrings = makeSUT().getReceivedStrings(for: [1, 2, 7])
+        let receivedStrings = makeSUT().fizzBuzz(2)
 
         XCTAssertEqual(receivedStrings, expectedStrings)
     }
 
     func test_getString_shouldReturnFizzForMultipliesOfThree() {
-        let expectedStrings: [String] = ["Fizz", "Fizz", "Fizz"]
+        let expectedStrings: [String] = ["1", "2", "Fizz"]
 
-        let receivedStrings = makeSUT().getReceivedStrings(for: [3, 66, 999])
+        let receivedStrings = makeSUT().fizzBuzz(3)
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
 
     func test_getString_shouldReturnBuzzForMultipliesOfFive() {
-        let expectedStrings: [String] = ["Buzz", "Buzz", "Buzz"]
+        let expectedStrings: [String] = ["1", "2", "Fizz", "4", "Buzz"]
 
-        let receivedStrings = makeSUT().getReceivedStrings(for: [5, 10, 1000])
+        let receivedStrings = makeSUT().fizzBuzz(5)
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
 
     func test_getString_shouldReturnFizzBuzzForMultipliesOfThreeAndFive() {
-        let expectedStrings: [String] = ["FizzBuzz", "FizzBuzz", "FizzBuzz"]
+        let expectedStrings: [String] = ["1",
+                                         "2",
+                                         "Fizz",
+                                         "4",
+                                         "Buzz",
+                                         "Fizz",
+                                         "7",
+                                         "8",
+                                         "Fizz",
+                                         "Buzz",
+                                         "11",
+                                         "Fizz",
+                                         "13",
+                                         "14",
+                                         "FizzBuzz"]
 
-        let receivedStrings = makeSUT().getReceivedStrings(for: [15, 135, 75])
-
-        XCTAssertEqual(expectedStrings, receivedStrings)
-    }
-
-    func test_getStrings_shouldReturnArrayOfStringsTillTheNumber() {
-        let expectedStrings: [String] = [
-            "1",
-            "2",
-            "Fizz",
-            "4",
-            "Buzz",
-            "Fizz",
-            "7",
-            "8",
-            "Fizz",
-            "Buzz",
-            "11",
-            "Fizz",
-            "13",
-            "14",
-            "FizzBuzz"
-        ]
-
-        let receivedStrings = makeSUT().getReceivedStrings(till: 15)
+        let receivedStrings = makeSUT().fizzBuzz(15)
 
         XCTAssertEqual(expectedStrings, receivedStrings)
     }
