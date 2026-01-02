@@ -1,5 +1,5 @@
 # LeetCode-Swift
-This repo contains the solution of the problems which are written in Swift and solved by TDD. The problems are taken from LeedtCode site
+This repo contains the solution of the problems which are written in Swift and solved by TDD or unit tests. The problems are taken from LeedtCode site.
 
 | Problem | Solution | Time Complexity (Runtime) | Space Complexity (Memory) | Difficulty | 
 | ----------------| --------------------- | ------ | ----- | ---- |
